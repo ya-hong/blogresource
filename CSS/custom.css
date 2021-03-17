@@ -1,0 +1,149 @@
+
+
+#m_night {
+    height: 20px;
+}
+#m_top {
+    height: 20px;
+}
+#m_menu {
+    height: 20px;
+}
+#m_toc {
+    height: 20px;
+}
+#m_search {
+    height: 20px;
+}
+
+#m_toc {
+    bottom: 125px;
+}
+#m_top {
+    bottom: 70px;
+}
+#m_menu {
+    bottom: 15px;
+}
+
+.Sliderbar-content-switch.clear  h2 {
+    color: white!important;
+}
+
+
+.sliderbar-content-menu {
+    padding-left: 30px;
+}
+
+
+
+.tag-item {
+    width: auto;
+    display: inline-flex;
+}
+
+nav ul {
+ list-style: none;
+ }           
+nav li {
+ display: inline;                
+ }   
+
+
+
+#page-content cat-nav > ul {
+    list-style: none;
+}
+#page-content cat-nav > ul > li > a {
+    font-size: 1.3rem;
+    border-bottom: 1.5px solid #eaecef;
+}
+#page-content cat-nav > ul > li > a:hover {
+    letter-spacing: 0.2rem;
+	border-bottom: 1.5px solid RGB(48,71,88);
+}
+
+#page-content cat-nav  a {
+    width: 2.5rem;
+	height: 2.5rem;
+	top: 0.45rem;
+	
+	color: RGB(48,71,88);
+	-webkit-transition: .3s ease all;
+	-moz-transition: .3s ease all;
+	-ms-transition: .3s ease all;
+	-o-transition: .3s ease all;
+	transition: .3s ease all;
+    outline:none;
+}
+#page-content cat-nav  a:hover {
+    color: #07f;;
+}
+
+
+.toc ol.toc-list {
+    margin-left: 20px;
+}
+.toc ol.toc-list li > a{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.tag-item {
+
+    width: auto;
+    display: inline-flex;
+    border-radius: 6px;
+    margin: 20px;
+    box-shadow: 1px 2px 10px 4px rgb(0 0 0 / 12%);
+}
+span.tag-name {
+    color: black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.3rem;
+}
+
+
+.friendImage {
+    width:100%;
+    height:0;
+    padding-bottom: 100%;
+    overflow:hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    background-size:cover;
+    border-radius: 100rem;
+}
+
+.friendCanvas {
+    height: 60px;
+    width: 60px;
+    border-radius: 100rem;
+    float: left;
+}
+
+
+.no-more {
+    opacity: 0;
+    text-align:center;
+}
+
+#comments>.comment-list>li.comment-body {
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 70px 6px rgb(0 0 0 / 12%);
+    padding: 20px;
+    width: 90%;
+    margin: 20px auto;
+    float: none;
+}
+
+#comments .comment-list .comment-children {
+    padding-left: 40px;
+}
+
