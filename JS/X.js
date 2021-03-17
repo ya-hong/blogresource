@@ -51,22 +51,22 @@ function switchNightMode(){
 })();
 
 //相册排版by 熊猫小A
-function makeGallery(){
-  var base = 50;
-  $.each($('.photos'), function(i, photoSet){
-    $.each($(photoSet).children(), function(j, item){
-      var img = new Image();
-      img.src = $(item).find('img').attr('src');
-      img.onload = function(){
-        var w = parseFloat(img.width);
-        var h = parseFloat(img.height);
-        $(item).css('width', w*base/h +'px');
-        $(item).css('flex-grow', w*base/h);
-        $(item).find('div').css('padding-top', h/w*100+'%');
-      };
-    });
-  });
-}
+// function makeGallery(){
+//   var base = 50;
+//   $.each($('.photos'), function(i, photoSet){
+//     $.each($(photoSet).children(), function(j, item){
+//       var img = new Image();
+//       img.src = $(item).find('img').attr('src');
+//       img.onload = function(){
+//         var w = parseFloat(img.width);
+//         var h = parseFloat(img.height);
+//         $(item).css('width', w*base/h +'px');
+//         $(item).css('flex-grow', w*base/h);
+//         $(item).find('div').css('padding-top', h/w*100+'%');
+//       };
+//     });
+//   });
+// }
 
 
 
@@ -119,10 +119,10 @@ function pjax_complete(){
 
 	//显示主页面
 	$("#M").addClass("opacity-show");
-	PreFancybox();
+// 	PreFancybox();
 	imageinfo();
 	toc();
-  makeGallery();
+//   makeGallery();
 	collapse_toggle();
 	jQuery(document).ready(function ($) {
 			$("img.lazyload").lazyload({
@@ -136,17 +136,17 @@ function pjax_complete(){
   }
 }
 
-function PreFancybox(){
-	$("#post img").each(function(){
-				$(this).wrap(function(){
-					if($(this).is(".bq") || $(this).is("#feedme-content img"))
-					{
-						 return '';
-					}
-				return '<a data-fancybox="gallery" no-pjax data-type="image" href="' + $(this).attr("src") + '" class="light-link"></a>';
-		 });
-	});
-}
+// function PreFancybox(){
+// 	$("#post img").each(function(){
+// 				$(this).wrap(function(){
+// 					if($(this).is(".bq") || $(this).is("#feedme-content img"))
+// 					{
+// 						 return '';
+// 					}
+// 				return '<a data-fancybox="gallery" no-pjax data-type="image" href="' + $(this).attr("src") + '" class="light-link"></a>';
+// 		 });
+// 	});
+// }
 
 function imageinfo(){
 	$("#post img").each(function(){
