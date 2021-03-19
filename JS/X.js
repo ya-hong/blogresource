@@ -106,7 +106,7 @@ function pjax_complete(){
     
 	//Prism重启
 	if (typeof Prism !== 'undefined') {
-		Prism.highlightAll(true,null);
+		Prism.highlightAll();
 	}
 	//Meting重启
 	var isFunction =false;
