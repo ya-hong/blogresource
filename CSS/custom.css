@@ -87,6 +87,10 @@ nav li {
 .toc ol.toc-list li > a{
     padding-left: 0px;
     padding-right: 0px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 
